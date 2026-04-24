@@ -19,11 +19,23 @@ public class Program {
 		produto.nome = sc.nextLine();
 		System.out.print("Preço: ");
 		produto.preco = sc.nextDouble();
-		System.out.println("Quantidade no estoque: ");
+		System.out.print("Quantidade no estoque: ");
 		produto.quantidade = sc.nextInt();
 
-		System.out.println(produto);
-		
+		System.out.println("Dados do produto: " + produto);
+		System.out.println();
+		System.out.print("Entre com número de produtos para ser adicionado no estoque: ");
+		int qtd = sc.nextInt();
+		produto.addProdutos(qtd);
+		System.out.println();
+		System.out.println("Dados atualizados do produto: " + produto);
+
+		System.out.println();
+		System.out.print("Entre com número de produtos para ser removido no estoque");
+		qtd = sc.nextInt();
+		produto.removerProduto(qtd);
+		System.out.println("Dados atualizados do produto: " + produto);
+
 		sc.close();
 
 	}

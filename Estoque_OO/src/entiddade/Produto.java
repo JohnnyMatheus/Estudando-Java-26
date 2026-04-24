@@ -24,7 +24,7 @@ public class Produto {
 				+ String.format("%.2f", preco)
 				+ ", " 
 				+ quantidade 
-				+ "unidades, Total: $" 
+				+ " unidades, Total: $" 
 				+ String.format("%.2f", valorTotalEstoque());
 	}
 }
